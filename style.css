@@ -13,25 +13,26 @@ body * {
 
 #content {
   width: 100%;
-  max-width: 31.875rem;
   margin: auto;
 }
 body {
-  display: relative;
   text-align: center;
   background-color: var(--body-bg-color);
 }
 .profile img {
+  margin-top: 7.5rem;
   width: 40%;
   border-radius: 50%;
   max-width: 12.5rem;
+  border: 2px solid var(--purple);
+  padding: 0.43rem;
 }
 .profile p {
   text-align: center;
   color: var(--purple);
   size: 1rem;
-  margin: 0 0.938rem;
-  margin-top: 0.9375rem;
+  margin: 0 0.9rem;
+  margin-top: 0.9rem;
 }
 .link-list a {
   text-decoration: none;
@@ -43,9 +44,29 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  
+  padding: 0 2.75rem;
 }
-.link-list li{
+.link-list li {
+  box-sizing: border-box;
   border: solid 2px var(--purple);
   border-radius: 0.25rem;
+  width: 100%;
+}
+.social-links {
+  margin-top: 4.25rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  body {
+    max-width: 31.875rem;
+    margin: auto;
+  }
+  .profile img {
+    margin-top: 12.5rem;
+  }
 }
